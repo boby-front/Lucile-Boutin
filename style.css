@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "SawarabiMincho-Regular",serif;
+}
+
+@font-face{
+    font-family: "SawarabiMincho-Regular";
+    src: url(fonts/SawarabiMincho-Regular.ttf);
+}
+
+/**************** Barre de naviguation**********************/
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 15% 0px 15%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu a{
+    border-bottom: solid black 2px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    cursor: pointer;
+    color: orange;
+    border-bottom: orange solid 2px;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+/******************* Presentation **********************/
+
+h1{
+    text-align: center;
+    margin-top:70px ;
+    margin: bottom 20px;
+    font-size: 75px;
+}
+
+.presentation{
+    width: 50%;
+    height: 200px;
+    text-align: justify;
+    margin: 60px auto 0px auto;
+    line-height: 30px;
+    border-top: solid black 1px;
+    padding-top: 60px;
+    font-size: 20px;
+    overflow: hidden;
+    background-color: red;
+}
+
+/****************** Gallerie **************************/
+
+.block{
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+
+
+.gallerie1, .gallerie2{
+    display: flex;
+    justify-content: center;
+}
+
+/****************** Article ***************************/
+
+.block1 , .block2{
+    height: 400px;
+    width: 600px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.block1{
+margin-right: 15px;
+}
+
+.block2{
+margin-left: 15px;
+}
+
+.article{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+section{
+    text-align: center;
+}
+
+section h2{
+    padding-bottom: 30px;
+}
+
+/****************** Responsive ********************/
+
+@media screen and (max-width: 1100px){
+    .menu{
+        font-size: 15px;
+        margin: 30px 0 0 0;
+    }
+
+    .block{
+        height: 430px;
+        width: 430px;
+    }
+
+    .gallerie1{
+        flex-wrap: wrap;
+    }
+
+    .gallerie2{
+        display: none;
+    }
+    }
